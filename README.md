@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Unicorn Attractor
 
-## Available Scripts
+Unicorn attractor is a company started that speacializes in providing IT solutions to its customers.
+These project is ment to help the company track and manage issues that arise from the user base.
+Any bugs and feature requests are submitted to the site and the Administrators can asign persons to follow up with the issue.
 
-In the project directory, you can run:
+### UX
 
-### `npm start`
+User who first visit the site meet a plain login form and an option to create a new account.
+Once they're logged in, theirs a dashboard that contains statistical information based on previous issues reported and generally the records created by the system.Theres an Issues page where all the recieved issues are displayed in tabular form. Then theirs a MyIssues page that presents the issues that the currently logged in user has submitted.
+Issues assigned to the currently logged in user are displayed in Assigned to me page.To create an issue, a user should click on the new issues button.
+Theres a number of transitions to make navigations through the site smooth
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Features
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Create Issue - Allows the user to create issues by filling out a form. The input is presented as is and these is achieved by the use of a WYSIWYG editor.
 
-### `npm test`
+Comment - Allows users to leave comments on issues. User can provide possible workarounds or explain how theyve experienced similar issues
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Upvote - Users can upvote issues to indicated that they have experenced such or want to experience such.
+The more upvotes an issue gets. The higher its priority
 
-### `npm run build`
+Attempted solution - When creating an issue a user can add information about he/she tried to solve the problem. These lets the assignees understand the issue more
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Features left to implement
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Pay to upvote feature request  - To upgrade the system and ad requested features, funding is needed. For that to happen, users can upvote a feature and for every feature they upvote, they should pay an amount.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies used
 
-### `npm run eject`
+Django has been used to create a backed with RESTful API to access the data and authenticate users
+The frontend is built on react and a number of javascript libraries to create a good user experience
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Testing
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+The frontend and backend are hosted seperately using Heroku
+Theres two seperate git repos for the project, one for the backend and one for the front
+The frontend is build version of the React development version which is available in this repo.
+The backend settings for deployment are imported from the django-heroku module
 
-### `npm run build` fails to minify
+### Credits
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+All the content from the site was custom created with a few references to the google issue tracker
+
+### Media
+
+No media files have been used for the project
+
+### Acknowledgments
+
+
